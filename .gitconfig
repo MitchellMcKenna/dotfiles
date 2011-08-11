@@ -1,0 +1,49 @@
+[user]
+        name = Mitchell McKenna
+        email = mitchellmckenna@gmail.com
+[github]
+        user = mitchellmckenna
+[core]
+        excludesfile = ~/.gitignore_global
+[alias]
+        all = !sh -c '~/dotfiles/bin/git-all'
+        amend = commit --amend
+        ci = commit
+        co = checkout
+        diffs = diff --staged
+        info = !sh -c '~/dotfiles/bin/git-info'
+        lastcommit = log --stat --decorate -n 1
+        lasttag = for-each-ref refs/tags --format='%(refname:short)' --sort=-taggerdate --count 1
+        xtags = for-each-ref refs/tags --format='%(refname:short) (%(taggerdate))' --sort=-taggerdate --count
+        logs = log --stat --decorate
+        me = log --author="jonursenbach" --after=yesterday --no-merges --reverse
+        pop = stash pop
+        pushtag = push origin master
+        pushtags = push origin master --tags
+        pushup = push origin master
+        rank-contributors = !sh -c '~/dotfiles/bin/git-rank-contributors'
+        re-up = ~sh -c '~/dotfiles/bin/git-up'
+        st = status
+        undo = !sh -c '~/dotfiles/bin/git-undo'
+        unstage = reset HEAD
+        up = !sh -c '~/dotfiles/bin/git-up'
+        whichtag = tag --contains
+        whichbranch = branch --contains
+        wtf = !sh -c '~/dotfiles/bin/git-wtf --all-commits --long --all'
+[branch]
+        autosetuprebase = always
+[color]
+        ui = auto
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        frag = magenta bold
+        meta = yellow bold
+        new = green bold
+        old = red bold
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
