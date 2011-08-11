@@ -16,7 +16,7 @@
         lasttag = for-each-ref refs/tags --format='%(refname:short)' --sort=-taggerdate --count 1
         xtags = for-each-ref refs/tags --format='%(refname:short) (%(taggerdate))' --sort=-taggerdate --count
         logs = log --stat --decorate
-        me = log --author="jonursenbach" --after=yesterday --no-merges --reverse
+        me = log --author="mitchellmckenna" --after=yesterday --no-merges --reverse
         pop = stash pop
         pushtag = push origin master
         pushtags = push origin master --tags
