@@ -32,7 +32,7 @@
     set showcmd                             " show partial command in the last line of the screen
     set showfulltag                         " show full completion tags
     set showmode                            " show mode on last line of the screen
-    set showtabline=0                       " don't use tabs
+"    set showtabline=0                       " don't use tabs
     set sidescrolloff=10                    " always keep 10 lines to the left and right of cursor
 
     " status line
@@ -54,4 +54,5 @@
 " Search options {
     set ignorecase                          " case insensitve searching by default
     set smartcase                           " do case sensitive searches when caps are present
+    set incsearch                           " seach for text as you enter it
 " }
