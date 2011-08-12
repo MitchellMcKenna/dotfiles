@@ -20,7 +20,6 @@
     syntax on                               " enable syntax highlighting
     
     set cmdheight=2                         " command line two lines high
-    set cursorline                          " highlight current line
     set laststatus=2                        " always show status line
     set lazyredraw                          " don't redraw when don't have to
     set linebreak                           " smarter wordwrap
@@ -35,7 +34,6 @@
     set showmode                            " show mode on last line of the screen
     set showtabline=0                       " don't use tabs
     set sidescrolloff=10                    " always keep 10 lines to the left and right of cursor
-
 
     " status line
     if has('statusline')
