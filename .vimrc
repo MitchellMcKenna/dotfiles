@@ -1,3 +1,27 @@
+" Include Pathogen {
+    source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+    call pathogen#runtime_append_all_bundles()
+    call pathogen#helptags()
+" }
+
+" Include phpDocumentor {
+    source ~/.vim/bundle/vip/.vim/php-doc.vim
+    inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+    nnoremap <C-P> :call PhpDocSingle()<CR>
+    vnoremap <C-P> :call PhpDocRange()<CR> 
+" }
+
+" Turn on Omni Completion {
+    filetype plugin on
+    set ofu=syntaxcomplete#Complete
+" }
+
+" Map NERDTree and TagList keys, TagList on right side {
+    nnoremap <silent> <F2> :NERDTreeToggle<CR>
+    nnoremap <silent> <F3> :TlistToggle<CR>
+    let Tlist_Use_Right_Window = 1
+" }
+
 " Text formatting {
     set autoindent                          " copy indent from current line when starting a new line 
     set infercase                           " infer case when doing keyword completion

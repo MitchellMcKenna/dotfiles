@@ -1,0 +1,27 @@
+[submodule ".vim/bundle/vim-pathogen"]
+	path = .vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule ".vim/bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/snipmate"]
+	path = .vim/bundle/snipmate
+	url = http://github.com/msanders/snipmate.vim.git
+[submodule ".vim/bundle/vip"]
+	path = .vim/bundle/vip
+	url = http://github.com/tobyS/vip.git
+[submodule ".vim/bundle/tcomment_vim"]
+	path = .vim/bundle/tcomment_vim
+	url = http://github.com/tomtom/tcomment_vim.git
+[submodule ".vim/bundle/taglist"]
+	path = .vim/bundle/taglist
+	url = http://github.com/vim-scripts/taglist.vim.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = http://github.com/ervandew/supertab.git
