@@ -1,8 +1,20 @@
+VIM Setup
+
+In your root directory (cd ~), get the latest code from the repo:
+git clone http://github.com/MitchellMcKenna/dotfiles.git
+
 Create symbolic links so that ~/.vimrc points to the ~/.vim/vimrc file:
-ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/dotfiles/.vimrc ~/.vimrc
 
 Create symbolic links so that ~/.vim/ points to the ~/dotfiles/.vim/ file:
-ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/.vim ~/.vim
+
+Get all the plugins from their git repos:
+cd ~/dotfiles
+git submodule init
+git submodule update
+
+Done!
 
 You can add vim plugins as git submodules for easy updates:
 git submodule add http://github.com.com/tpope/vim-pathogen.git .vim/bundle/vim-pathogen
