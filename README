@@ -31,3 +31,4 @@ Taglist Requires Exuberant Ctags:
 Windows - if you get an error install in windows and add the following to vimrc:
 let Tlist_Ctags_Cmd = 'C:\ctags\ctags.exe'
 Mac - install macports and then update ctags using: sudo port install ctags
+Linux - sudo apt-get install exuberant-ctags
