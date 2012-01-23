@@ -20,6 +20,13 @@
     nnoremap <silent> <F2> :NERDTreeToggle<CR>
     nnoremap <silent> <F3> :TlistToggle<CR>
     let Tlist_Use_Right_Window = 1
+    let tlist_php_settings='php;f:function' "only list functions in php files (no variables, classes)
+" }
+
+" Map shift+h to tab left, shift+l to tab right {
+    nnoremap <S-h> :tabp<CR>
+    nnoremap <S-l> :tabn<CR>
+    let Tlist_Use_Right_Window = 1
 " }
 
 " Text formatting {
@@ -79,4 +86,8 @@
     set ignorecase                          " case insensitve searching by default
     set smartcase                           " do case sensitive searches when caps are present
     set incsearch                           " seach for text as you enter it
+" }
+
+" EasyMotion settings {
+    let g:EasyMotion_do_shade = 0
 " }
