@@ -40,6 +40,8 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/Lokaltog/vim-easymotion.git .vim/bundle/vim-easymotion
 
 Taglist Requires Exuberant Ctags:
+---------------------------------
+
 Windows - if you get an error install in windows and add the following to vimrc:
   
     let Tlist_Ctags_Cmd = 'C:\ctags\ctags.exe'
