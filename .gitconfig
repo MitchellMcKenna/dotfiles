@@ -5,6 +5,7 @@
         user = mitchellmckenna
 [core]
         excludesfile = ~/.gitignore_global
+        editor = vim
 [alias]
         all = !sh -c '~/dotfiles/bin/git-all'
         amend = commit --amend
