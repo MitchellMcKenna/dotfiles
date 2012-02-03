@@ -31,13 +31,16 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add http://github.com.com/tpope/vim-pathogen.git .vim/bundle/vim-pathogen
     git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
     git submodule add http://github.com/scrooloose/nerdtree.git .vim/bundle/nerdtree
-    git submodule add http://github.com/msanders/snipmate.vim.git .vim/bundle/snipmate
     git submodule add http://github.com/tobyS/vip.git .vim/bundle/vip
     git submodule add http://github.com/tomtom/tcomment_vim.git .vim/bundle/tcomment_vim
     git submodule add http://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist
     git submodule add http://github.com/tpope/vim-surround.git .vim/bundle/vim-surround
     git submodule add http://github.com/ervandew/supertab.git .vim/bundle/supertab
     git submodule add https://github.com/Lokaltog/vim-easymotion.git .vim/bundle/vim-easymotion
+    git submodule add http://github.com/garbas/vim-snipmate.git .vim/bundle/snipmate
+    git submodule add https://github.com/tomtom/tlib_vim.git .vim/bundle/tlib_vim
+    git submodule add https://github.com/MarcWeber/vim-addon-mw-utils.git .vim/bundle/vim-addon-mw-utils
+    git submodule add https://github.com/honza/snipmate-snippets.git .vim/bundle/snipmate-snippets
 
 Taglist Requires Exuberant Ctags:
 ---------------------------------
