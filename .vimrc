@@ -23,6 +23,12 @@
     let tlist_php_settings='php;f:function' "only list functions in php files (no variables, classes)
 " }
 
+" Map fuzzyfinder {
+    nmap ,f :FufFileWithCurrentBufferDir<CR>
+    nmap ,b :FufBuffer<CR>
+    nmap ,t :FufTaggedFile<CR>
+" }
+
 " Map shift+h to tab left, shift+l to tab right {
     nnoremap <S-h> :tabp<CR>
     nnoremap <S-l> :tabn<CR>
