@@ -6,6 +6,7 @@
 [core]
         excludesfile = ~/.gitignore_global
         editor = vim
+        excludesfile = ~/.cvsignore
 [alias]
         all = !sh -c '~/dotfiles/bin/git-all'
         amend = commit --amend

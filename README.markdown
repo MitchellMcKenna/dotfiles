@@ -7,17 +7,11 @@ Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linu
 
 In your root directory (cd ~), get the latest code from the repo:
 
-    git clone http://github.com/MitchellMcKenna/dotfiles.git
+    git clone git@github.com/MitchellMcKenna/dotfiles.git
 
 Create symbolic link so that ~/.vimrc points to the ~/dotfiles/.vimrc file:
 
     ln -s ~/dotfiles/.vimrc ~/.vimrc
-
-Create a symbolic link so that ~/.bashrc points to the ~/dotfiles/.bashrc (careful this includes removing current bashrc)
-
-    cd ~/dotfiles
-    rm .bashrc
-    ln -s ~/dotfiles.bashrc ~/.bashrc
 
 Create symbolic link so that ~/.vim/ points to the ~/dotfiles/.vim/ file:
 
@@ -29,9 +23,18 @@ Get all the plugins from their git repos:
     git submodule init
     git submodule update
 
+Create a symbolic link so that ~/.bashrc points to ~/dotfiles/.bashrc
+
+    mv ~/dotfiles/.bashrc ~/dotfiles/.bashrc.bak
+    ln -s ~/dotfiles/.bashrc ~/.bashrc
+
+Create a symbolic link so that ~/.gitconfig points to ~/dotfiles/.gitconfig (update with your git creds)
+
+    mv ~/dotfiles/.gitconfig ~dotfiles/.gitconfig.bak
+    ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+
 Tell Git to ignore tags so you don't get dirty submodules when tags are built out:
 
-    git config --global core.excludesfile '~/.cvsignore'
     echo tags >> ~/.cvsignore
 
 Done!
