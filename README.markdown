@@ -1,15 +1,25 @@
 VIM Setup
 ========
 
+Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linux:
+
+    sudo apt-get install vim
+
 In your root directory (cd ~), get the latest code from the repo:
 
     git clone http://github.com/MitchellMcKenna/dotfiles.git
 
-Create symbolic links so that ~/.vimrc points to the ~/.vim/vimrc file:
+Create symbolic link so that ~/.vimrc points to the ~/dotfiles/.vimrc file:
 
     ln -s ~/dotfiles/.vimrc ~/.vimrc
 
-Create symbolic links so that ~/.vim/ points to the ~/dotfiles/.vim/ file:
+Create a symbolic link so that ~/.bashrc points to the ~/dotfiles/.bashrc (careful this includes removing current bashrc)
+
+    cd ~/dotfiles
+    rm .bashrc
+    ln -s ~/dotfiles.bashrc ~/.bashrc
+
+Create symbolic link so that ~/.vim/ points to the ~/dotfiles/.vim/ file:
 
     ln -s ~/dotfiles/.vim ~/.vim
 
@@ -50,10 +60,10 @@ Taglist Requires Exuberant Ctags:
 ---------------------------------
 
 Windows - if you get an error install in windows and add the following to vimrc:
-  
+
     let Tlist_Ctags_Cmd = 'C:\ctags\ctags.exe'
 
-Mac - install macports and then update ctags using: 
+Mac - install macports and then update ctags using:
 
     sudo port install ctags
 
