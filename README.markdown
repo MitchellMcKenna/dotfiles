@@ -33,10 +33,6 @@ Create a symbolic link so that ~/.gitconfig points to ~/dotfiles/.gitconfig (upd
     mv ~/dotfiles/.gitconfig ~dotfiles/.gitconfig.bak
     ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
-Tell Git to ignore tags so you don't get dirty submodules when tags are built out:
-
-    echo tags >> ~/.cvsignore
-
 Done!
 
 You can add vim plugins as git submodules for easy updates:
@@ -73,3 +69,11 @@ Mac - install macports and then update ctags using:
 Linux:
 
     sudo apt-get install exuberant-ctags
+
+Tell Git to ignore dirty submodules
+-----------------------------------
+
+Git will say there is changes to submodules when tags are built out. Just add "ignore = dirty" to any submodules in .gitmodules for each submodule it complains about.
+
+Not working? You probably need to update your git to the latest version
+

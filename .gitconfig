@@ -2,11 +2,10 @@
         name = Mitchell McKenna
         email = mitchellmckenna@gmail.com
 [github]
-        user = mitchellmckenna
+        user = MitchellMcKenna
 [core]
-        excludesfile = ~/.gitignore_global
         editor = vim
-        excludesfile = ~/.cvsignore
+	      excludesfile = ~/dotfiles/.gitignore
 [alias]
         all = !sh -c '~/dotfiles/bin/git-all'
         amend = commit --amend
