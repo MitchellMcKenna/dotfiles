@@ -1,3 +1,7 @@
+" Use Vim settings, rather then Vi settings (much better!) {
+    set nocompatible
+" }
+
 " Include Pathogen {
     source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
     call pathogen#runtime_append_all_bundles()
@@ -23,10 +27,33 @@
     let tlist_php_settings='php;f:function' "only list functions in php files (no variables, classes)
 " }
 
+" Turn on ctrlp {
+    set runtimepath^=~/.vim/bundle/ctrlp.vim
+" }
+
 " Map fuzzyfinder {
     nmap ,f :FufFileWithCurrentBufferDir<CR>
     nmap ,b :FufBuffer<CR>
     nmap ,t :FufTaggedFile<CR>
+" }
+
+" Poweline {
+    let g:Powerline_theme="skwp"
+    let g:Powerline_colorscheme="skwp"
+    let g:Powerline_symbols = 'fancy'
+" }
+
+" Syntastical - PHP Code_Sniffer {
+    let g:phpcs_std_list="PSR2"
+    let g:syntastic_check_on_open=0
+    "let g:syntastic_enable_highlighting = 0
+    let g:syntastic_quiet_warnings=1
+    let g:syntastic_error_symbol='✗'
+    let g:syntastic_warning_symbol='⚠'
+    let g:phpcs_max_output = 0 " Unlimited output.
+    let g:syntastic_mode_map = { 'mode': 'active',
+                               \ 'active_filetypes': ['php'],
+                               \ 'passive_filetypes': [] }
 " }
 
 " Map shift+h to tab left, shift+l to tab right {
@@ -61,10 +88,10 @@
 
 " Tab settings {
     set expandtab                           " expand tabs to spaces
-    set shiftwidth=2                        " number of spaces to use with autoindent
+    set shiftwidth=4                        " number of spaces to use with autoindent
     set smarttab                            " tab and backspace are smart
-    set softtabstop=2                       " bumber of spaces used by expandtab
-    set tabstop=2                           " size of a real tab character
+    set softtabstop=4                       " bumber of spaces used by expandtab
+    set tabstop=4                           " size of a real tab character
     set autoindent                  " indent at the same level of the previous line
 " }
 

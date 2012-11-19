@@ -53,7 +53,12 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/vim-scripts/L9.git .vim/bundle/L9
     git submodule add https://github.com/vim-scripts/FuzzyFinder.git .vim/bundle/vim-fuzzyfinder
     git submodule add https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
-
+    git submodule add https://github.com/Lokaltog/vim-powerline.git .vim/bundle/vim-powerline
+    git submodule add https://github.com/scrooloose/syntastic.git .vim/bundle/syntastic
+    git submodule add https://github.com/vim-scripts/phpcs.vim.git .vim/bundle/phpcs
+    git submodule add https://github.com/rmanalan/jshint.vim.git .vim/bundle/jshint.vim
+    git submodule add https://github.com/vim-scripts/csslint.vim.git .vim/bundle/csslint.vim
+    git submodule add https://github.com/kien/ctrlp.vim .vim/bundle/ctrlp.vim
 
 Taglist Requires Exuberant Ctags:
 ---------------------------------
