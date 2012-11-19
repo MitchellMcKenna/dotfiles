@@ -67,9 +67,12 @@ Windows - if you get an error install in windows and add the following to vimrc:
 
     let Tlist_Ctags_Cmd = 'C:\ctags\ctags.exe'
 
-Mac - install macports and then update ctags using:
+Mac - install brew and then update ctags using:
 
-    sudo port install ctags
+    brew install ctags
+
+    open up ~/.profile and add /usr/local/bin to your path so it looks something like this:
+    export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
 
 Linux:
 
