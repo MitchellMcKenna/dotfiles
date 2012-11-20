@@ -38,8 +38,8 @@
 " }
 
 " Poweline {
-    let g:Powerline_theme="skwp"
-    let g:Powerline_colorscheme="skwp"
+    let g:Powerline_theme="solarized16"
+    let g:Powerline_colorscheme="solarized16"
     let g:Powerline_symbols = 'fancy'
 " }
 
