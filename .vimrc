@@ -8,11 +8,11 @@
     call pathogen#helptags()
 " }
 
-" Include phpDocumentor {
+" Include phpDocumentor, since ctrl+p is taken for CtrlP use ctrl+d {
     source ~/.vim/bundle/vip/.vim/php-doc.vim
-    inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
-    nnoremap <C-P> :call PhpDocSingle()<CR>
-    vnoremap <C-P> :call PhpDocRange()<CR>
+    inoremap <C-D> <ESC>:call PhpDocSingle()<CR>i
+    nnoremap <C-D> :call PhpDocSingle()<CR>
+    vnoremap <C-D> :call PhpDocRange()<CR>
 " }
 
 " Turn on Omni Completion {
