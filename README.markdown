@@ -51,7 +51,6 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/MarcWeber/vim-addon-mw-utils.git .vim/bundle/vim-addon-mw-utils
     git submodule add https://github.com/honza/snipmate-snippets.git .vim/bundle/snipmate-snippets
     git submodule add https://github.com/vim-scripts/L9.git .vim/bundle/L9
-    git submodule add https://github.com/vim-scripts/FuzzyFinder.git .vim/bundle/vim-fuzzyfinder
     git submodule add https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
     git submodule add https://github.com/Lokaltog/vim-powerline.git .vim/bundle/vim-powerline
     git submodule add https://github.com/scrooloose/syntastic.git .vim/bundle/syntastic

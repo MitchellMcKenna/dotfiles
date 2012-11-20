@@ -31,12 +31,6 @@
     set runtimepath^=~/.vim/bundle/ctrlp.vim
 " }
 
-" Map fuzzyfinder {
-    nmap ,f :FufFileWithCurrentBufferDir<CR>
-    nmap ,b :FufBuffer<CR>
-    nmap ,t :FufTaggedFile<CR>
-" }
-
 " Poweline {
     let g:Powerline_theme="solarized16"
     let g:Powerline_colorscheme="solarized16"

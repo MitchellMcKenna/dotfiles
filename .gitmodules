@@ -34,10 +34,6 @@
 [submodule ".vim/bundle/snipmate-snippets"]
 	path = .vim/bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
-[submodule ".vim/bundle/vim-fuzzyfinder"]
-	path = .vim/bundle/vim-fuzzyfinder
-	url = https://github.com/vim-scripts/FuzzyFinder.git
-  ignore = dirty
 [submodule ".vim/bundle/L9"]
 	path = .vim/bundle/L9
 	url = https://github.com/vim-scripts/L9.git
