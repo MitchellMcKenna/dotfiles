@@ -25,13 +25,17 @@ Get all the plugins from their git repos:
 
 Create a symbolic link so that ~/.bashrc points to ~/dotfiles/.bashrc
 
-    mv ~/dotfiles/.bashrc ~/dotfiles/.bashrc.bak
+    mv ~/.bashrc ~/.bashrc.bak
     ln -s ~/dotfiles/.bashrc ~/.bashrc
 
 Create a symbolic link so that ~/.gitconfig points to ~/dotfiles/.gitconfig (update with your git creds)
 
-    mv ~/dotfiles/.gitconfig ~dotfiles/.gitconfig.bak
+    mv ~/.gitconfig ~/.gitconfig.bak
     ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+
+Create a symbolic link so that ~/.git-completion points to ~/dotfiles/.git-completion (update with your git creds)
+
+    ln -s ~/dotfiles/.git-completion ~/.git-completion
 
 Done!
 
