@@ -88,3 +88,9 @@ Git will say there is changes to submodules when tags are built out. Just add "i
 
 Not working? You probably need to update your git to the latest version
 
+phpcs.vim Ignoring Settings to set PHP_CodeSniffer to use PSR2
+--------------------------------------------------------------
+
+Just force PSR2 to phpcs' default standard:
+
+    sudo phpcs --config-set default_standard PSR2
