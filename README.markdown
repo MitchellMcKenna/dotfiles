@@ -63,6 +63,11 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/vim-scripts/csslint.vim.git .vim/bundle/csslint.vim
     git submodule add https://github.com/kien/ctrlp.vim .vim/bundle/ctrlp.vim
 
+Update All Git Submodules
+-------------------------
+
+    git submodule foreach git pull
+
 Taglist Requires Exuberant Ctags:
 ---------------------------------
 
