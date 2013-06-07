@@ -38,5 +38,6 @@ Thumbs.db
 *.swp
 *.swo
 mysession*
+Session.vim
 tags
 .netrwhist

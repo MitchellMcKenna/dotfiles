@@ -4,7 +4,7 @@
 
 " Include Pathogen {
     source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
-    call pathogen#runtime_append_all_bundles()
+    call pathogen#incubate()
     call pathogen#helptags()
 " }
 
@@ -55,6 +55,10 @@
     nnoremap <S-l> :tabn<CR>
     let Tlist_Use_Right_Window = 1
 " }
+
+" Snipmate: let smarty's .tpl files use the html snippets too
+    au BufRead *.tpl set ft=html
+    au BufNewFile *.tpl set ft=html
 
 " Highlight extra line spacing on end of lines {
     highlight ExtraWhitespace ctermbg=blue guibg=blue

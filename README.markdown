@@ -49,7 +49,7 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/garbas/vim-snipmate.git .vim/bundle/snipmate
     git submodule add https://github.com/tomtom/tlib_vim.git .vim/bundle/tlib_vim
     git submodule add https://github.com/MarcWeber/vim-addon-mw-utils.git .vim/bundle/vim-addon-mw-utils
-    git submodule add https://github.com/honza/snipmate-snippets.git .vim/bundle/snipmate-snippets
+    git submodule add https://github.com/honza/vim-snippets.git .vim/bundle/vim-snippets
     git submodule add https://github.com/vim-scripts/L9.git .vim/bundle/L9
     git submodule add https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
     git submodule add https://github.com/Lokaltog/vim-powerline.git .vim/bundle/vim-powerline

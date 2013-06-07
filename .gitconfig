@@ -2,7 +2,7 @@
         name = Mitchell McKenna
         email = mitchellmckenna@gmail.com
 [github]
-        user = MitchellMcKenna
+        user = mitchellmckenna
 [core]
         editor = vim
 	      excludesfile = ~/dotfiles/.gitignore
