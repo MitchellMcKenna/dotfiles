@@ -31,12 +31,6 @@
     set runtimepath^=~/.vim/bundle/ctrlp.vim
 " }
 
-" Poweline {
-    let g:Powerline_theme="solarized16"
-    let g:Powerline_colorscheme="solarized16"
-    let g:Powerline_symbols = 'fancy'
-" }
-
 " Syntastical - PHP Code_Sniffer {
     let g:phpcs_std_list="PSR2"
     let g:syntastic_check_on_open=0
@@ -94,7 +88,6 @@
 " }
 
 " UI settings {
-
     syntax on                               " enable syntax highlighting
 
     set cmdheight=2                         " command line two lines high
@@ -137,4 +130,8 @@
 
 " EasyMotion settings {
     let g:EasyMotion_do_shade = 0
+" }
+
+" Airline - FontForge/Powerline {
+    let g:airline_powerline_fonts = 1
 " }

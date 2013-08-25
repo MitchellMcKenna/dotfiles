@@ -56,12 +56,12 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/honza/vim-snippets.git .vim/bundle/vim-snippets
     git submodule add https://github.com/vim-scripts/L9.git .vim/bundle/L9
     git submodule add https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
-    git submodule add https://github.com/Lokaltog/vim-powerline.git .vim/bundle/vim-powerline
     git submodule add https://github.com/scrooloose/syntastic.git .vim/bundle/syntastic
     git submodule add https://github.com/vim-scripts/phpcs.vim.git .vim/bundle/phpcs
     git submodule add https://github.com/rmanalan/jshint.vim.git .vim/bundle/jshint.vim
     git submodule add https://github.com/vim-scripts/csslint.vim.git .vim/bundle/csslint.vim
     git submodule add https://github.com/kien/ctrlp.vim .vim/bundle/ctrlp.vim
+    git submodule add https://github.com/bling/vim-airline.git .vim/bundle/vim-airline
 
 Update All Git Submodules
 -------------------------
@@ -85,6 +85,14 @@ Mac - install brew and then update ctags using:
 Linux:
 
     sudo apt-get install exuberant-ctags
+
+Setting Up Airline (Powerline)
+------------------------------
+
+In order to get the fancy arrows and symbols in the statusbar powered by vim-airline, you need to patch the font, follow the instructions on [vim-airline - Integrating with powerline fonts](https://github.com/bling/vim-airline#integrating-with-powerline-fonts).
+
+Don't forget to update your terminal settings to use the new font as well after you've patched it.
+
 
 Tell Git to ignore dirty submodules
 -----------------------------------
