@@ -94,6 +94,12 @@ In order to get the fancy arrows and symbols in the statusbar powered by vim-air
 
 Don't forget to update your terminal settings to use the new font as well after you've patched it.
 
+Setup CSS Linting
+-----------------
+
+Install NodeJS if you don't have it already then run:
+
+    sudo npm install -g csslint
 
 Tell Git to ignore dirty submodules
 -----------------------------------
