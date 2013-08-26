@@ -94,12 +94,22 @@ In order to get the fancy arrows and symbols in the statusbar powered by vim-air
 
 Don't forget to update your terminal settings to use the new font as well after you've patched it.
 
+Entering Insert Mode Causes Delay
+---------------------------------
+
+This can be caused by vim-airline in older versions on Vim 7.3. Either update to a newer version, disable airline, or use Powerline instead.
+
 Setup CSS Linting
 -----------------
 
 Install NodeJS if you don't have it already then run:
 
     sudo npm install -g csslint
+
+Typing 'vi' Not Opening Vim
+---------------------------
+
+    alias vi="vim"
 
 Tell Git to ignore dirty submodules
 -----------------------------------

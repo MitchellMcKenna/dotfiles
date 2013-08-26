@@ -134,4 +134,10 @@
 
 " Airline - FontForge/Powerline {
     let g:airline_powerline_fonts = 1
+    let g:bufferline_echo = 0
 " }
+
+" GitGutter - Make sign column clear {
+    hi! link SignColumn Background
+"    highlight clear SignColum              " Use instead of above to make same as line numbers bg
+"
