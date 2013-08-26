@@ -140,4 +140,8 @@
 " GitGutter - Make sign column clear {
     hi! link SignColumn Background
 "    highlight clear SignColum              " Use instead of above to make same as line numbers bg
-"
+" }
+
+" Fix backspace not working {
+    set backspace=indent,eol,start
+" }
