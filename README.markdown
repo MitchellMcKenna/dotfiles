@@ -58,8 +58,6 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
     git submodule add https://github.com/scrooloose/syntastic.git .vim/bundle/syntastic
     git submodule add https://github.com/vim-scripts/phpcs.vim.git .vim/bundle/phpcs
-    git submodule add https://github.com/rmanalan/jshint.vim.git .vim/bundle/jshint.vim
-    git submodule add https://github.com/vim-scripts/csslint.vim.git .vim/bundle/csslint.vim
     git submodule add https://github.com/kien/ctrlp.vim .vim/bundle/ctrlp.vim
     git submodule add https://github.com/bling/vim-airline.git .vim/bundle/vim-airline
     git submodule add https://github.com/airblade/vim-gitgutter .vim/bundle/vim-gitgutter
@@ -99,12 +97,13 @@ Entering Insert Mode Causes Delay
 
 This can be caused by vim-airline in older versions on Vim 7.3. Either update to a newer version, disable airline, or use Powerline instead.
 
-Setup CSS Linting
+Setup JS/CSS Linting
 -----------------
 
 Install NodeJS if you don't have it already then run:
 
-    sudo npm install -g csslint
+    npm install -g csslint
+    npm install -g jshint
 
 Typing 'vi' Not Opening Vim
 ---------------------------
