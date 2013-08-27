@@ -48,7 +48,6 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/tomtom/tcomment_vim.git .vim/bundle/tcomment_vim
     git submodule add https://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist
     git submodule add https://github.com/tpope/vim-surround.git .vim/bundle/vim-surround
-    git submodule add https://github.com/ervandew/supertab.git .vim/bundle/supertab
     git submodule add https://github.com/Lokaltog/vim-easymotion.git .vim/bundle/vim-easymotion
     git submodule add https://github.com/garbas/vim-snipmate.git .vim/bundle/snipmate
     git submodule add https://github.com/tomtom/tlib_vim.git .vim/bundle/tlib_vim
@@ -61,6 +60,7 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/kien/ctrlp.vim .vim/bundle/ctrlp.vim
     git submodule add https://github.com/bling/vim-airline.git .vim/bundle/vim-airline
     git submodule add https://github.com/airblade/vim-gitgutter .vim/bundle/vim-gitgutter
+    git submodule add https://github.com/Valloric/YouCompleteMe.git .vim/bundle/YouCompleteMe
 
 Update All Git Submodules
 -------------------------
@@ -98,12 +98,17 @@ Entering Insert Mode Causes Delay
 This can be caused by vim-airline in older versions on Vim 7.3. Either update to a newer version, disable airline, or use Powerline instead.
 
 Setup JS/CSS Linting
------------------
+--------------------
 
 Install NodeJS if you don't have it already then run:
 
     npm install -g csslint
     npm install -g jshint
+
+Setup YouCompleteMe - As-You-Type Code Completion
+--------------------------------------------
+
+[Install guide](https://github.com/Valloric/YouCompleteMe). Requires Vim 7.3.584, if you using a lower Vim version and can't upgrade it, use [neocomplecache](https://github.com/Shougo/neocomplcache.vim) instead.
 
 Typing 'vi' Not Opening Vim
 ---------------------------
