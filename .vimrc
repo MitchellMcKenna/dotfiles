@@ -87,6 +87,10 @@
     set autoindent                  " indent at the same level of the previous line
 " }
 
+" Set tabs to 2 spaces for javascript files
+    autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+" }
+
 " UI settings {
     syntax on                               " enable syntax highlighting
 
