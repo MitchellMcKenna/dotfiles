@@ -4,7 +4,7 @@
 
 " Include Pathogen {
     source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
-    call pathogen#incubate()
+    call pathogen#infect()
     call pathogen#helptags()
 " }
 
