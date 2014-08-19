@@ -23,11 +23,6 @@ Get all the plugins from their git repos:
     git submodule init
     git submodule update
 
-Create a symbolic link so that ~/.bashrc points to ~/dotfiles/.bashrc
-
-    mv ~/.bashrc ~/.bashrc.bak
-    ln -s ~/dotfiles/.bashrc ~/.bashrc
-
 Create a symbolic link so that ~/.gitconfig points to ~/dotfiles/.gitconfig (update with your git creds)
 
     mv ~/.gitconfig ~/.gitconfig.bak
@@ -35,7 +30,15 @@ Create a symbolic link so that ~/.gitconfig points to ~/dotfiles/.gitconfig (upd
 
 Create a symbolic link so that ~/.git-completion points to ~/dotfiles/.git-completion (update with your git creds)
 
-    ln -s ~/dotfiles/.git-completion ~/.git-completion
+    ln -s ~/dotfiles/.git-completion.sh ~/.git-completion.sh
+    ln -s ~/dotfiles/.git-prompt.sh ~/.git-prompt.sh
+
+Create a symbolic link so that ~/.bashrc points to ~/dotfiles/.bashrc
+
+    mv ~/.bashrc ~/.bashrc.bak
+    ln -s ~/dotfiles/.bashrc ~/.bashrc
+    source ~/.bashrc
+
 
 Done!
 
@@ -61,6 +64,16 @@ You can add vim plugins as git submodules for easy updates:
     git submodule add https://github.com/bling/vim-airline.git .vim/bundle/vim-airline
     git submodule add https://github.com/airblade/vim-gitgutter .vim/bundle/vim-gitgutter
     git submodule add https://github.com/Valloric/YouCompleteMe.git .vim/bundle/YouCompleteMe
+    git submodule add https://github.com/Shougo/vimproc.vim.git .vim/bundle/vimproc.vim
+    git submodule add https://github.com/Shougo/unite.vim.git .vim/bundle/unit.vim
+    git submodule add https://github.com/m2mdas/phpcomplete-extended.git .vim/bundle/phpcomplete-extended
+
+Compile vimproc.vim for phpcomplete-extended
+--------------------------------------------
+
+    cd .vim/bundle/vimproc.vim
+    make
+    cd ../../..
 
 Update All Git Submodules
 -------------------------
@@ -112,6 +125,8 @@ Setup YouCompleteMe - As-You-Type Code Completion
 
 Typing 'vi' Not Opening Vim
 ---------------------------
+
+Add the following to your ~/.profile
 
     alias vi="vim"
 

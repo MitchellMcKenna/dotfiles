@@ -62,3 +62,15 @@
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule ".vim/bundle/vimproc.vim"]
+	path = .vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule ".vim/bundle/unit.vim"]
+	path = .vim/bundle/unit.vim
+	url = https://github.com/Shougo/unite.vim.git
+[submodule ".vim/bundle/phpcomplete-extended"]
+	path = .vim/bundle/phpcomplete-extended
+	url = https://github.com/m2mdas/phpcomplete-extended.git
+[submodule ".vim/bundle/phpcomplete-extended-laravel"]
+	path = .vim/bundle/phpcomplete-extended-laravel
+	url = https://github.com/m2mdas/phpcomplete-extended-laravel

@@ -44,6 +44,11 @@
                                \ 'passive_filetypes': [] }
 " }
 
+" phpcomplete-extended {
+    autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
+    let g:phpcomplete_index_composer_command="composer"
+" }
+
 " Map shift+h to tab left, shift+l to tab right {
     nnoremap <S-h> :tabp<CR>
     nnoremap <S-l> :tabn<CR>
