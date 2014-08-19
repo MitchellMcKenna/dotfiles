@@ -102,3 +102,10 @@ fi
 export PATH="$HOME/bin:$PATH"
 source ~/.git-completion.sh
 PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
+
+#mongodb
+alias mongostart="launchctl start org.mongodb.mongod"
+alias mongostop="launchctl stop org.mongodb.mongod"
+
+#user homebrew's php version on the commandline
+export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
