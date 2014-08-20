@@ -1,5 +1,32 @@
-VIM Setup
-========
+VIM
+===
+
+What VIM plugins are included?
+------------------------------
+
+* [Pathogen](https://github.com/tpope/vim-pathogen) - Plugin manager for all these plugins.
+* [Fugitive](https://github.com/tpope/vim-fugitive) - Git commands in VIM
+* [NERD Tree](https://github.com/scrooloose/nerdtree) - Folder explorer panel to find/open/create/etc files (F2).
+* [Tag List](https://github.com/vim-scripts/taglist.vim) - See a list of functions in class and jump to them (F3).
+* [NERD Commenter](https://github.com/scrooloose/nerdcommenter) - Easily comment-out/uncomment code (,ci)
+* [PDV](https://github.com/tobyS/pdv) - PHP docblock generator (ctrl+d).
+* [surround.vim](https://github.com/tpope/vim-surround) - Change surrounding items, eg. "Hello" to 'Hello' (cs"').
+* [EasyMotion](https://github.com/Lokaltog/vim-easymotion) - Jump to a word fast, eg. if it starts with 's' (,,fs).
+* [Snipmate](https://github.com/garbas/vim-snipmate) - Textmate-like snippets engine, eg. create a for loop (for<tab>).
+* [Vim Snippets](https://github.com/honza/vim-snippets) - Snippets for Snipmate.
+* [Solarized](https://github.com/altercation/vim-colors-solarized) - Colorscheme for Vim.
+* [Syntastic](https://github.com/scrooloose/syntastic) - Syntax error checking.
+* [phpcs.vim](https://github.com/vim-scripts/phpcs.vim) - PHP_CodeSniffer.
+* [CtrlP](https://github.com/kien/ctrlp.vim) - Fuzzy file finder (ctrl+p).
+* [vim-airline](https://github.com/bling/vim-airline) - vim status bar, lightweight powerline.
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) - Shows git diff symbols in the 'gutter' [sign column].
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Code autocompletion as-you-type (<tab>).
+* [phpcomplete-extended](https://github.com/m2mdas/phpcomplete-extended) - Autocomplete improvements for PHP, works with YouCompleteMe.
+* [vim-php-namespace](https://github.com/arnaud-lb/vim-php-namespace) - Automatically add 'use' statements for class under cursor (,u).
+* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) - Sublime Text-like multiple curors (ctrl+n to go to next word).
+
+Setup
+-----
 
 Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linux:
 
@@ -39,46 +66,7 @@ Create a symbolic link so that ~/.bashrc points to ~/dotfiles/.bashrc
     ln -s ~/dotfiles/.bashrc ~/.bashrc
     source ~/.bashrc
 
-
 Done!
-
-You can add vim plugins as git submodules for easy updates:
------------------------------------------------------------
-    git submodule add https://github.com.com/tpope/vim-pathogen.git .vim/bundle/vim-pathogen
-    git submodule add https://github.com/tpope/vim-fugitive.git bundle/fugitive
-    git submodule add https://github.com/scrooloose/nerdtree.git .vim/bundle/nerdtree
-    git submodule add https://github.com/tobyS/vip.git .vim/bundle/vip
-    git submodule add https://github.com/tomtom/tcomment_vim.git .vim/bundle/tcomment_vim
-    git submodule add https://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist
-    git submodule add https://github.com/tpope/vim-surround.git .vim/bundle/vim-surround
-    git submodule add https://github.com/Lokaltog/vim-easymotion.git .vim/bundle/vim-easymotion
-    git submodule add https://github.com/garbas/vim-snipmate.git .vim/bundle/snipmate
-    git submodule add https://github.com/tomtom/tlib_vim.git .vim/bundle/tlib_vim
-    git submodule add https://github.com/MarcWeber/vim-addon-mw-utils.git .vim/bundle/vim-addon-mw-utils
-    git submodule add https://github.com/honza/vim-snippets.git .vim/bundle/vim-snippets
-    git submodule add https://github.com/vim-scripts/L9.git .vim/bundle/L9
-    git submodule add https://github.com/altercation/vim-colors-solarized.git .vim/bundle/vim-colors-solarized
-    git submodule add https://github.com/scrooloose/syntastic.git .vim/bundle/syntastic
-    git submodule add https://github.com/vim-scripts/phpcs.vim.git .vim/bundle/phpcs
-    git submodule add https://github.com/kien/ctrlp.vim .vim/bundle/ctrlp.vim
-    git submodule add https://github.com/bling/vim-airline.git .vim/bundle/vim-airline
-    git submodule add https://github.com/airblade/vim-gitgutter .vim/bundle/vim-gitgutter
-    git submodule add https://github.com/Valloric/YouCompleteMe.git .vim/bundle/YouCompleteMe
-    git submodule add https://github.com/Shougo/vimproc.vim.git .vim/bundle/vimproc.vim
-    git submodule add https://github.com/Shougo/unite.vim.git .vim/bundle/unit.vim
-    git submodule add https://github.com/m2mdas/phpcomplete-extended.git .vim/bundle/phpcomplete-extended
-
-Compile vimproc.vim for phpcomplete-extended
---------------------------------------------
-
-    cd .vim/bundle/vimproc.vim
-    make
-    cd ../../..
-
-Update All Git Submodules
--------------------------
-
-    git submodule foreach git pull
 
 Taglist Requires Exuberant Ctags:
 ---------------------------------
@@ -98,17 +86,25 @@ Linux:
 
     sudo apt-get install exuberant-ctags
 
-Setting Up Airline (Powerline)
-------------------------------
-
-In order to get the fancy arrows and symbols in the statusbar powered by vim-airline, you need to patch the font, follow the instructions on [vim-airline - Integrating with powerline fonts](https://github.com/bling/vim-airline#integrating-with-powerline-fonts).
-
-Don't forget to update your terminal settings to use the new font as well after you've patched it.
-
-Entering Insert Mode Causes Delay
+Setup ctags for vim-php-namespace
 ---------------------------------
 
-This can be caused by vim-airline in older versions on Vim 7.3. Either update to a newer version, disable airline, or use Powerline instead.
+    ctags-exuberant -R --PHP-kinds=+cf
+
+or
+
+    ctags -R --PHP-kinds=+cf
+
+Compile vimproc.vim for phpcomplete-extended
+--------------------------------------------
+
+    cd ~/.vim/bundle/vimproc.vim
+    make
+
+Setup YouCompleteMe - As-You-Type Code Completion
+--------------------------------------------
+
+[Install guide](https://github.com/Valloric/YouCompleteMe). Requires Vim 7.3.584, if you using a lower Vim version and can't upgrade it, use [neocomplecache](https://github.com/Shougo/neocomplcache.vim) instead.
 
 Setup JS/CSS Linting
 --------------------
@@ -118,10 +114,29 @@ Install NodeJS if you don't have it already then run:
     npm install -g csslint
     npm install -g jshint
 
-Setup YouCompleteMe - As-You-Type Code Completion
---------------------------------------------
+Setting Up Airline (Powerline)
+------------------------------
 
-[Install guide](https://github.com/Valloric/YouCompleteMe). Requires Vim 7.3.584, if you using a lower Vim version and can't upgrade it, use [neocomplecache](https://github.com/Shougo/neocomplcache.vim) instead.
+In order to get the fancy arrows and symbols in the statusbar powered by vim-airline, you need to patch the font, follow the instructions on [vim-airline - Integrating with powerline fonts](https://github.com/bling/vim-airline#integrating-with-powerline-fonts).
+
+Don't forget to update your terminal settings to use the new font as well after you've patched it.
+
+You can add vim plugins as git submodules for easy updates:
+-----------------------------------------------------------
+
+Example:
+
+    git submodule add https://github.com/tpope/vim-pathogen.git ~/.vim/bundle/vim-pathogen
+
+Update All Git Submodules
+-------------------------
+
+    git submodule foreach git pull
+
+Entering Insert Mode Causes Delay
+---------------------------------
+
+This can be caused by vim-airline in older versions on Vim 7.3. Either update to a newer version, disable airline, or use Powerline instead.
 
 Typing 'vi' Not Opening Vim
 ---------------------------

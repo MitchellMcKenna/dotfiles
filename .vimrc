@@ -2,6 +2,11 @@
     set nocompatible
 " }
 
+" Set leader key to a comma {
+    let mapleader=","
+    let g:mapleader = ","
+" }
+
 " Include Pathogen {
     source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
     call pathogen#infect()
@@ -9,10 +14,8 @@
 " }
 
 " Include phpDocumentor, since ctrl+p is taken for CtrlP use ctrl+d {
-    source ~/.vim/bundle/vip/.vim/php-doc.vim
-    inoremap <C-D> <ESC>:call PhpDocSingle()<CR>i
-    nnoremap <C-D> :call PhpDocSingle()<CR>
-    vnoremap <C-D> :call PhpDocRange()<CR>
+    let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+    nnoremap <C-D> :call pdv#DocumentWithSnip()<CR>
 " }
 
 " Turn on Omni Completion {
@@ -47,6 +50,11 @@
 " phpcomplete-extended {
     autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
     let g:phpcomplete_index_composer_command="composer"
+" }
+
+" vim-php-namespace {
+    inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+    noremap <Leader>u :call PhpInsertUse()<CR>
 " }
 
 " Map shift+h to tab left, shift+l to tab right {

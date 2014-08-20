@@ -74,3 +74,24 @@
 [submodule ".vim/bundle/phpcomplete-extended-laravel"]
 	path = .vim/bundle/phpcomplete-extended-laravel
 	url = https://github.com/m2mdas/phpcomplete-extended-laravel
+[submodule ".vim/bundle/capture.vim"]
+	path = .vim/bundle/capture.vim
+	url = https://github.com/tyru/capture.vim
+[submodule ".vim/bundle/vmustache"]
+	path = .vim/bundle/vmustache
+	url = https://github.com/tobyS/vmustache
+[submodule ".vim/bundle/pdv"]
+	path = .vim/bundle/pdv
+	url = https://github.com/tobyS/pdv
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+[submodule ".vim/bundle/vim-php-namespace"]
+	path = .vim/bundle/vim-php-namespace
+	url = https://github.com/arnaud-lb/vim-php-namespace
