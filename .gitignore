@@ -41,3 +41,9 @@ mysession*
 Session.vim
 tags
 .netrwhist
+.phpcomplete_extended/
+gov_charity_model.php
+
+# PHP Storm ignore files #
+##########################
+.idea/

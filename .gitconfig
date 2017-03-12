@@ -5,7 +5,7 @@
         user = mitchellmckenna
 [core]
         editor = vim
-	      excludesfile = ~/dotfiles/.gitignore
+	excludesfile = /Users/mitchellmckenna/dotfiles/.gitignore
 [alias]
         all = !sh -c '~/dotfiles/bin/git-all'
         amend = commit --amend
@@ -48,3 +48,9 @@
         added = yellow
         changed = green
         untracked = cyan
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

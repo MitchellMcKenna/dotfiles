@@ -107,5 +107,12 @@ PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
 alias mongostart="launchctl start org.mongodb.mongod"
 alias mongostop="launchctl stop org.mongodb.mongod"
 
-#user homebrew's php version on the commandline
-export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+#Add composer to PATH, eg. so laravel cli can be used
+export PATH="$PATH:~/.composer/vendor/bin"
+
+#Add node to path
+export PATH="$HOME/.node/bin:$PATH"
+
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$PATH"

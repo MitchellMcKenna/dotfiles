@@ -102,6 +102,9 @@
 
 " Set tabs to 2 spaces for javascript files
     autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+    autocmd FileType css setlocal shiftwidth=2 tabstop=2
+    autocmd FileType scss setlocal shiftwidth=2 tabstop=2
+    autocmd FileType less setlocal shiftwidth=2 tabstop=2
 " }
 
 " UI settings {
